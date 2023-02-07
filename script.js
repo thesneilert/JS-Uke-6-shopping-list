@@ -3,7 +3,7 @@
 const app = document.getElementById("app"); //henter div med id "app"
 
 let inputValue = ''
-let basket = ['Melk', 'Bakepulver', 'Kakao', 'Egg', 'Smør']
+let handleliste = ['Melk', 'Bakepulver', 'Kakao', 'Egg', 'Smør']
 
 
 // ----- VIEW -----
@@ -12,10 +12,10 @@ show();
 function show() {
     let html = '';
 
-    for (let i = 0; i < basket.length; i++) {
+    for (let i = 0; i < handleliste.length; i++) {
         html += `
             <li>
-                ${basket[i]} 
+                ${handleliste[i]} 
                 <button onclick="changeItem(${i})">Changes</button>
                 <button onclick="deleteItem(${i})">x</button>
             </li> `
@@ -32,10 +32,10 @@ show();
 function show() {
     let html = '';
 
-    for (let i = 0; i < basket.length; i++) {
+    for (let i = 0; i < handleliste.length; i++) {
         html += `
             <li>
-                ${basket[i]} 
+                ${handleliste[i]} 
                 <button onclick="changeItem(${i})">Changes</button>
                 <button onclick="deleteItem(${i})">x</button>
             </li> `
