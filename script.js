@@ -3,7 +3,7 @@
 const app = document.getElementById("app"); //henter div med id "app"
 
 let inputValue = ''
-let handleliste = ['']
+let handleliste = ['Brød']
 
 // ----- VIEW -----
 
@@ -15,7 +15,7 @@ function show() {
         html += `
             <li>
                 ${handleliste[i]} 
-                <button onclick="changeItem(${i})">Changes</button>
+                <button onclick="changeItem(${i})">Endre</button>
                 <button onclick="deleteItem(${i})">x</button>
             </li> `
     }
